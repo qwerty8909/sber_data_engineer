@@ -1,0 +1,25 @@
+1. 
+tar cPf - /home/de11an/de/files/*.log | gzip -9 - > ~/kore/quiz.tar.gz
+
+2. 
+chmod 771 quiz.sh 
+
+a) chmod ugo+x quiz.sh
+b) chmod ug+w quiz.sh
+c) chmod o-r quiz.sh
+
+3. 
+ps -u de11an > processes.txt
+или
+ps u | sed 's/de11an//g' > processes.txt
+-- получаются разные результаты, объясните пожалуйста--
+
+4.
+ls -la /home/de11an | grep -v 'de11an' > description.txt
+
+5.
+55 23 * * * /home/de11an/kore/daily1.sh
+0 8,17 * * * /home/de11an/kore/daily2.sh
+0 8-17 * * 1-5 /home/de11an/kore/hourly.sh
+0 0 1 1 * /home/de11an/kore/happy_new_year.sh или @yearly /home/de11an/kore/happy_new_year.sh
+0 */4 * * * /home/de11an/kore/quatre.sh

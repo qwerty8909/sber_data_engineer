@@ -1,0 +1,1 @@
+* 2 * * * /home/de11an/kore/project/main.py &> /home/de11an/kore/project/log.txt
